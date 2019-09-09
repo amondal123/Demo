@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MagentoLogin {
 
@@ -28,7 +28,7 @@ public class MagentoLogin {
 		
 		System.out.println(npass);
 		
-		WebDriver driver =  new ChromeDriver();
+		WebDriver driver =  new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait
 		                    (20, TimeUnit.SECONDS);
